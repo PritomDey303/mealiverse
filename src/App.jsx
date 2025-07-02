@@ -1,16 +1,9 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+
+import AppRouter from "./router/AppRouter";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Footer />
-    </>
-  );
+  return <AppRouter />;
 }
 
 export default App;

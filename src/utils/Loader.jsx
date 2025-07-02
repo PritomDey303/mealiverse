@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Loader = () => {
   return (
     <StyledWrapper>
-      <div className="spinner mx-auto my-10">
+      <div className="spinner w-full mx-auto my-10">
         <div />
         <div />
         <div />

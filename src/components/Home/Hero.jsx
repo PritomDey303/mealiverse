@@ -1,6 +1,7 @@
 import { Search } from "lucide-react";
 import { useRef, useState } from "react";
-import Meals from "./Meals";
+import Meals from "../common/Meals";
+import SurpriseMe from "./SurpriseMe";
 
 const Hero = () => {
   const mealsResultRef = useRef(null);
@@ -11,7 +12,11 @@ const Hero = () => {
     e.preventDefault();
     if (query.trim()) {
       setSearchTerm(query.trim());
-      mealsResultRef.current?.scrollIntoView({ behavior: "smooth" });
+      setQuery("");
+
+      setTimeout(() => {
+        mealsResultRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 200);
     }
   };
 
