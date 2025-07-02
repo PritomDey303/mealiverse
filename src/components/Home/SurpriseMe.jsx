@@ -23,7 +23,7 @@ const SurpriseMe = () => {
       className="relative min-h-[30vh] flex items-center justify-center text-white"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80')",
+          "url('https://www.shutterstock.com/image-photo/background-food-dishes-european-cuisine-260nw-2490284951.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

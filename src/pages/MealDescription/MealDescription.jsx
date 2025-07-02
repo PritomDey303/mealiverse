@@ -116,7 +116,6 @@ const MealDescription = () => {
                 title="YouTube Video"
                 allowFullScreen
                 className="w-full h-full"
-                frameBorder="0"
               ></iframe>
             </div>
           </div>

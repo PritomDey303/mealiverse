@@ -1,7 +1,6 @@
 import { Search } from "lucide-react";
 import { useRef, useState } from "react";
 import Meals from "../common/Meals";
-import SurpriseMe from "./SurpriseMe";
 
 const Hero = () => {
   const mealsResultRef = useRef(null);
@@ -26,7 +25,7 @@ const Hero = () => {
         className="relative h-[70vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80')",
+            "url('https://t3.ftcdn.net/jpg/02/64/00/56/360_F_264005624_NyFEBO7k0OsNMQiI343zBZZ7WH89f6Ls.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
