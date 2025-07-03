@@ -10,10 +10,10 @@ const Category = () => {
 
   return (
     <section className="px-5 md:px-20 py-16 bg-gray-50 min-h-[60vh]">
-      <h2 className="text-3xl font-bold text-gray-800 uppercase mb-2">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 uppercase mb-2">
         Category:{name}
       </h2>
-      <div className="w-35 h-1 bg-orange-500 mb-8"></div>
+      <div className="w-28 sm:w-35 h-1 bg-orange-500 mb-8"></div>
 
       {isLoading ? (
         <div className="flex justify-center items-center h-64">

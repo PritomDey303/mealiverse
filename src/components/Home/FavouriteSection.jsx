@@ -11,7 +11,7 @@ const FavouriteSection = () => {
       </p>
       <Link
         to="/favourites"
-        className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300"
+        className="z-30 px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition cursor-pointer text-lg shadow-lg hover:shadow-xl active:scale-95 text-white"
       >
         View Favourites
       </Link>

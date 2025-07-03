@@ -50,10 +50,10 @@ const FilteredMeals = () => {
 
   return (
     <section className="px-5 md:px-20 py-16 bg-gray-50 min-h-screen">
-      <h2 className="text-3xl font-bold text-gray-800 uppercase mb-2">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 uppercase mb-2">
         Filter Meals
       </h2>
-      <div class="w-35 h-1 bg-orange-500 mb-10"></div>
+      <div class="w-28 sm:w-35 h-1 bg-orange-500 mb-10"></div>
 
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/4 bg-white p-6 rounded shadow">

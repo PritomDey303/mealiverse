@@ -8,10 +8,10 @@ const CategoriesList = () => {
 
   return (
     <section className="px-5 md:px-20 py-16 bg-white min-h-[60vh]">
-      <h2 className="text-3xl font-bold text-gray-800 uppercase mb-2">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 uppercase mb-2">
         Meal Categories
       </h2>
-      <div className="w-52 h-1 bg-orange-500 mb-8"></div>
+      <div className="w-35 sm:w-52 h-1 bg-orange-500 mb-8"></div>
 
       {isLoading ? (
         <div className="flex justify-center items-center h-64">
@@ -22,7 +22,7 @@ const CategoriesList = () => {
           Failed to load categories. Please try again.
         </p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
             <Link
               to={`/category/${category.strCategory}`}

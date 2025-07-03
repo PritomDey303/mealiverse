@@ -21,13 +21,19 @@ const Navbar = () => {
       <header className="bg-orange-400 text-black shadow-lg sticky top-0 z-50 border-b border-orange-800">
         <div className="container mx-auto px-4 py-8 flex justify-between items-center">
           <Link to="/">
-            <h1 className="text-3xl font-bold cursor-pointer">🍽️ Mealiverse</h1>
+            <h1 className="text-2xl sm:text-3xl font-bold cursor-pointer">
+              🍽️ Mealiverse
+            </h1>
           </Link>
           <button
             onClick={toggleSidebar}
-            className="text-black hover:bg-orange-450 p-2 rounded-md transition"
+            className="text-black hover:bg-orange-450 p-2 rounded-md transition duration-200"
           >
-            {isOpen ? <X size={28} /> : <Menu size={35} />}
+            {isOpen ? (
+              <X className="cursor-pointer " size={28} />
+            ) : (
+              <Menu className="cursor-pointer" size={35} />
+            )}
           </button>
         </div>
       </header>
@@ -40,11 +46,11 @@ const Navbar = () => {
       )}
 
       <aside
-        className={`fixed top-0 right-0 w-64 h-full bg-yellow-100 text-black z-50 shadow-lg transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 w-64 h-full bg-white text-black z-50 shadow-lg transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-yellow-300">
+        <div className="flex justify-between items-center p-4 border-b border-gray-300">
           <h2 className="text-xl font-semibold">Menu</h2>
           <button onClick={toggleSidebar} className="text-black">
             <X size={24} />
@@ -54,28 +60,28 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={closeSidebar}
-            className="px-4 py-2 rounded-md hover:bg-yellow-200"
+            className="px-4 py-2 rounded-md hover:bg-orange-200 transition duration-200"
           >
             Home
           </Link>
           <Link
             to="/favourites"
             onClick={closeSidebar}
-            className="px-4 py-2 rounded-md hover:bg-yellow-200"
+            className="px-4 py-2 rounded-md hover:bg-orange-200 transition duration-200"
           >
             Favourites
           </Link>
           <Link
             to="/filtered-meals"
             onClick={closeSidebar}
-            className="px-4 py-2 rounded-md hover:bg-yellow-200"
+            className="px-4 py-2 rounded-md hover:bg-orange-200 transition duration-200"
           >
             Filter Meals
           </Link>
           <div className="relative">
             <button
               onClick={() => setShowCategories((prev) => !prev)}
-              className="w-full px-4 py-2 flex justify-between items-center rounded-md hover:bg-yellow-200"
+              className="w-full px-4 py-2 flex justify-between items-center rounded-md hover:bg-orange-200 transition duration-200"
             >
               Categories
               <ChevronDown
@@ -92,7 +98,7 @@ const Navbar = () => {
                     key={cat.idCategory}
                     to={`/category/${cat.strCategory}`}
                     onClick={closeSidebar}
-                    className="px-3 py-1 rounded hover:bg-yellow-200"
+                    className="px-3 py-1 rounded hover:bg-orange-200 transition duration-200"
                   >
                     {cat.strCategory}
                   </Link>

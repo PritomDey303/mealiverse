@@ -44,7 +44,7 @@ const Hero = () => {
             />
             <button
               type="submit"
-              className="bg-orange-400 hover:bg-orange-500 px-6 py-3 font-semibold rounded-r-md transition"
+              className="bg-orange-400 hover:bg-orange-500 px-4 sm:px-6 py-3 font-semibold rounded-r-md transition"
             >
               <Search />
             </button>

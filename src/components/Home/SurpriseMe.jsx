@@ -35,7 +35,7 @@ const SurpriseMe = () => {
       <div className="flex flex-col items-center">
         <button
           onClick={handleClick}
-          className="z-30 px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition"
+          className="z-30 px-6 py-3 bg-orange-500 rounded-full font-semibold hover:bg-orange-600 transition cursor-pointer text-lg shadow-lg hover:shadow-xl active:scale-95"
         >
           Surprise Me
         </button>
@@ -46,9 +46,7 @@ const SurpriseMe = () => {
       </div>
       {/* surprice meal modal */}
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        {isLoading && (
-          <p className="text-gray-900 text-center text-2xl">Loading...</p>
-        )}
+        {isLoading && <p className="text-center text-gray-700">Loading...</p>}
         {isError && (
           <p className="text-red-500 text-center">
             Oops! Failed to fetch a surprise meal.

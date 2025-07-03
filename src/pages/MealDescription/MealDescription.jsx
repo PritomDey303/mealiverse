@@ -35,10 +35,10 @@ const MealDescription = () => {
 
   return (
     <section className="bg-gray-100 min-h-screen py-10 px-5 md:px-20">
-      <h1 className="text-4xl font-bold py-2">Meal Details</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold py-2">Meal Details</h1>
       <div className="w-30 h-1 bg-orange-500"></div>
       <div className="py-6 md:max-w-90% mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mt-5  1 mb-4 text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-5  1 mb-4 text-center">
           {meal.strMeal}
         </h1>
 
@@ -55,15 +55,17 @@ const MealDescription = () => {
             {/* Category */}
             {meal.strCategory && (
               <p className="text-lg font-semibold text-gray-800 mb-4">
-                Category:{" "}
+                Category:
                 <span className="font-normal">{meal.strCategory}</span>
               </p>
             )}
 
             {/* Ingredients */}
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-1">
               Ingredients
             </h2>
+            <div className="w-20 h-1 bg-orange-500  mb-4"></div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-gray-700">
               {ingredients.map((item, index) => (
                 <div key={index} className="flex items-start gap-2">
@@ -77,9 +79,11 @@ const MealDescription = () => {
 
         {/* Cooking Instructions */}
         <div className="mt-12">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-1">
             Cooking Instructions
           </h2>
+          <div className="w-30 h-1 bg-orange-500  mb-4"></div>
+
           <p className="text-gray-700 leading-relaxed whitespace-pre-line">
             {meal.strInstructions}
           </p>
@@ -88,7 +92,9 @@ const MealDescription = () => {
         {/* Tags  */}
         {meal.strTags && (
           <div className="mt-8">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Tags</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-1">Tags</h3>
+            <div className="w-8 h-1 bg-orange-500  mb-4"></div>
+
             <div className="flex flex-wrap gap-3">
               {meal.strTags.split(",").map((tag, idx) => (
                 <span
@@ -105,9 +111,11 @@ const MealDescription = () => {
         {/* YouTube Video */}
         {meal.strYoutube && (
           <div className="mt-16 max-w-4xl mx-auto px-4">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-1 text-center">
               Watch How to Make
             </h2>
+            <div className="w-40 h-1 bg-orange-500 mx-auto  mb-6"></div>
+
             <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-lg">
               <iframe
                 src={`https://www.youtube.com/embed/${

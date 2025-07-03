@@ -34,11 +34,11 @@ const FeaturedMeals = () => {
   };
 
   return (
-    <section className="min-h-[50vh] px-5 md:px-20 py-20 bg-gray-200 transition-all duration-300">
-      <h1 className="text-3xl font-bold uppercase text-gray-800">
+    <section className="min-h-[50vh] px-10 md:px-20 py-20 bg-gray-200 transition-all duration-300">
+      <h1 className="text-2xl sm:text-3xl font-bold uppercase text-gray-800">
         Featured Meals
       </h1>
-      <div className="w-45 h-1 mt-1 mb-10 bg-orange-500"></div>
+      <div className="w-35 sm:w-45 h-1 mt-1 mb-10 bg-orange-500"></div>
       {isLoading ? (
         <div className="flex justify-center items-center h-64">
           <Loader />
@@ -48,7 +48,7 @@ const FeaturedMeals = () => {
           Failed to load featured meals.
         </p>
       ) : (
-        <Slider {...settings}>
+        <Slider {...settings} className="px-2">
           {meals.map((meal) => (
             <Link
               to={`/description/${meal.idMeal}`}
