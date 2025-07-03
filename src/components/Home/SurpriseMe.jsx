@@ -46,9 +46,12 @@ const SurpriseMe = () => {
       </div>
       {/* surprice meal modal */}
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        {isLoading && <p className="text-center text-gray-700">Loading...</p>}
+        {isLoading && (
+          <p className="text-center text-gray-700 mt-4 z-50">Loading...</p>
+        )}
+
         {isError && (
-          <p className="text-red-500 text-center">
+          <p className="text-red-500 text-center mt-4">
             Oops! Failed to fetch a surprise meal.
           </p>
         )}
