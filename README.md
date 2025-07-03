@@ -1,87 +1,82 @@
 # Mealiverse
 
-Mealiverse is a React + Vite application that lets users browse and filter meals by ingredients using TheMealDB API.
+**Mealiverse** is a React + Vite application that lets users browse and filter meals by ingredients using [TheMealDB API](https://www.themealdb.com/).
 
 ---
 
-## Table of Contents
+## Live Link
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#tech-stack)
-- [Contributing](#contributing)
-- [License](#license)
+https://mealiverse.netlify.app
 
----
+## Run Locally
 
-## Installation
-
-To get Mealiverse up and running on your local machine, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/PritomDey303/mealiverse.git
-   cd mealiverse
-   ```
-
-2. **Install dependencies:**
-   Using npm or yarn:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
----
-
-## Usage
-
-Start the development server with:
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/PritomDey303/mealiverse.git
+```
 
+Go to the project directory
+
+```bash
+cd mealiverse
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+Open your browser and go to:
+👉 http://localhost:5173
 
 ## Features
 
-- Dynamic ingredient list fetched from TheMealDB API.
-
-- Filter meals by selecting a single ingredient.
-
-- Responsive UI built with Tailwind CSS.
-
-- Favorite meals stored locally.
-
-- Detailed meal descriptions.
-
-- Smooth navigation using React Router.
-
-- Loading and error handling states.
-
-- Lightweight and fast with Vite as the build tool.
+- Dynamic ingredient list fetched from TheMealDB API
+- Filter meals by selecting a single ingredient
+- Favorite meals stored locally
+- Responsive UI built with Tailwind CSS
+- Detailed meal descriptions
+- Smooth navigation using React Router
+- Loading and error handling states
+- Lightweight and fast using Vite as the build tool
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
-
+- Reactjs
+- Redux Toolkit
+- Tailwind CSS
+- Vite
 
 ## Contributing
 
 Contributions are welcome!
+
 To contribute:
 
-- Fork the repository
-- Create a feature branch
-- Make your changes
-- Submit a pull request
+1.  **Fork** the repository.
+2.  **Create a new branch**:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3.  **Make your changes**.
+4.  **Commit your changes**:
+    ```bash
+    git commit -m "feat: Add your feature description"
+    ```
+5.  **Push to the branch**:
+    ```bash
+    git push origin feature/your-feature
+    ```
+6.  **Submit a pull request**.
 
-For major changes, please open an issue first to discuss what you’d like to implement.
-Let’s build Mealiverse together!
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
+[MIT](https://choosealicense.com/licenses/mit/)
